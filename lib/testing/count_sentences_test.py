@@ -21,6 +21,8 @@ class TestMyString:
         string.value = 123
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "The value must be a string.\n")
+        
+         
 
     def test_is_sentence(self):
         '''returns True if value ends with a period and False otherwise.'''
